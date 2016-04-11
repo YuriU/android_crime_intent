@@ -19,6 +19,7 @@ import java.util.UUID;
  * Created by jerry on 02.04.2016.
  */
 public class CrimePagerActivity extends FragmentActivity
+    implements CrimeFragment.Callbacks
 {
     ViewPager mViewPager;
     ArrayList<Crime> mCrimes;
@@ -55,6 +56,7 @@ public class CrimePagerActivity extends FragmentActivity
         {
             if(mCrimes.get(i).Id.equals(crimeId)){
                 mViewPager.setCurrentItem(i);
+                setTitle(mCrimes.get(i).Title);
                 break;
             }
         }
@@ -69,7 +71,11 @@ public class CrimePagerActivity extends FragmentActivity
             public void onPageSelected(int position) {
                 Crime crime = mCrimes.get(position);
                 if(crime.Title != null)
+                {
                     setTitle(crime.Title);
+
+                }
+
             }
 
             @Override
@@ -77,5 +83,9 @@ public class CrimePagerActivity extends FragmentActivity
 
             }
         });
+    }
+
+    @Override
+    public void onCrimeUpdated(Crime crime) {
     }
 }

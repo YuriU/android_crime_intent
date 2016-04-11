@@ -1,6 +1,7 @@
 package com.example.jerry.crimeintent;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -59,6 +60,23 @@ public class CrimeFragment extends Fragment {
     private ImageButton mPhotoButton;
     private ImageView mPhotoView;
     private Button mSuspectButton;
+    private Callbacks mCallBacks;
+
+    public interface Callbacks{
+        void onCrimeUpdated(Crime crime);
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mCallBacks = (Callbacks)activity;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallBacks = null;
+    }
 
     public static CrimeFragment newInstance(UUID crimeId)
     {
@@ -128,6 +146,8 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 crime.Title = s.toString();
+                //getActivity().setTitle(crime.Title);
+                mCallBacks.onCrimeUpdated(crime);
             }
 
             @Override
@@ -135,7 +155,10 @@ public class CrimeFragment extends Fragment {
 
             }
         });
+
         TitleEdit.setText(crime.Title);
+        //getActivity().setTitle(crime.Title);
+
 
 
         DateButton = (Button)v.findViewById(R.id.crime_date);
@@ -160,6 +183,7 @@ public class CrimeFragment extends Fragment {
                 if (crime.Solved) {
                     returnResult();
                 }
+                mCallBacks.onCrimeUpdated(crime);
             }
         });
 
@@ -227,12 +251,14 @@ public class CrimeFragment extends Fragment {
         if(requestCode == REQUEST_DATE) {
             Date date = (Date)data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
             crime.Date = date;
+            mCallBacks.onCrimeUpdated(crime);
             DateButton.setText(crime.Date.toString());
         } else if(requestCode == REQUEST_PHOTO) {
             String filename = data.getStringExtra(CrimeCameraFragment.EXTRA_PHOTO_FILENAME);
             if(filename != null){
                 Photo p = new Photo(filename);
                 crime.Photo = p;
+                mCallBacks.onCrimeUpdated(crime);
                 showPhoto();
             }
         } else if(requestCode == REQUEST_CONTACT){
@@ -252,6 +278,7 @@ public class CrimeFragment extends Fragment {
             c.moveToFirst();
             String suspect = c.getString(0);
             crime.Suspect = suspect;
+            mCallBacks.onCrimeUpdated(crime);
             mSuspectButton.setText(suspect);
             c.close();
         }
