@@ -1,1 +1,1 @@
-include ':crimeintent', ':nerdlauncher', ':common', ':remotecontrol'
+include ':crimeintent', ':nerdlauncher', ':common', ':remotecontrol', ':photogallery'
