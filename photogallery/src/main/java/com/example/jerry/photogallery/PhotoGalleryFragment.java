@@ -5,6 +5,7 @@ import android.app.SearchableInfo;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -33,7 +34,7 @@ import java.util.ArrayList;
 /**
  * Created by jerry on 26.07.2016.
  */
-public class PhotoGalleryFragment extends Fragment {
+public class PhotoGalleryFragment extends VisibleFragment {
     private static final String TAG = "PhotoGalleryFragment";
     GridView mGridView;
     ArrayList<GalleryItem> mItems;
@@ -104,6 +105,10 @@ public class PhotoGalleryFragment extends Fragment {
         mThumbnailThread.start();
         mThumbnailThread.getLooper();
         Log.i(TAG, "Background thread started");
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        boolean isOn = prefs.getBoolean(PollService.PREF_IS_ALARM_ON, false);
+        PollService.setServiceAlarm(getActivity(), isOn);
     }
 
     public void updateItems() {
