@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/photogallery/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="86" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="86" />
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -58,28 +58,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoGalleryActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryActivity.java">
+      <file leaf-file-name="PhotoGalleryFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
               <folding>
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4535#4996#0" expanded="true" />
+                <element signature="e#4995#4996#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoGalleryFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java">
+      <file leaf-file-name="fragment_photo_page.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photogallery/src/main/res/layout/fragment_photo_page.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66859347">
-              <caret line="137" column="56" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="56" />
+            <state vertical-scroll-proportion="-4.6896553">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoPageFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.672447">
+              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4535#4949#0" expanded="true" />
-                <element signature="e#4948#4949#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoPageActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,18 +165,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartupReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/StartupReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="51" selection-start-line="20" selection-start-column="7" selection-end-line="22" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -157,8 +172,8 @@
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -4860,9 +4875,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jerry/crimeintent/ImageFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_crime.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-land/fragment_crime.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jerry/crimeintent/Model/Crime.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jerry/crimeintent/SingleFragmentActivity.java" />
@@ -4906,11 +4918,14 @@
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/StartupReceiver.java" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/VisibleFragment.java" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/NotificationReceiver.java" />
-        <option value="$PROJECT_DIR$/photogallery/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PollService.java" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/model/GalleryItem.java" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/model/FlickrFetchr.java" />
+        <option value="$PROJECT_DIR$/photogallery/src/main/res/layout/fragment_photo_page.xml" />
+        <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageActivity.java" />
         <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java" />
+        <option value="$PROJECT_DIR$/photogallery/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageFragment.java" />
       </list>
     </option>
   </component>
@@ -4970,6 +4985,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="photogallery" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android_crime_intent" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photogallery" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -5345,6 +5382,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.6114072" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -5369,7 +5407,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -5414,7 +5451,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java</url>
-          <line>149</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -5436,27 +5473,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crimeintent/src/main/java/com/example/jerry/crimeintent/CrimeCameraActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crimeintent/src/main/java/com/example/jerry/crimeintent/CrimeCameraFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/test/java/com/example/jerry/common/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -5786,14 +5802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogallery/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="86" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PollService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -5835,14 +5843,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java">
+    <entry file="file://$PROJECT_DIR$/photogallery/src/main/res/layout/fragment_photo_page.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66859347">
-          <caret line="137" column="56" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="56" />
+        <state vertical-scroll-proportion="-4.6896553">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4535#4949#0" expanded="true" />
-            <element signature="e#4948#4949#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoGalleryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4535#4996#0" expanded="true" />
+            <element signature="e#4995#4996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery/src/main/java/com/example/jerry/photogallery/PhotoPageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.672447">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
           </folding>
         </state>
       </provider>
