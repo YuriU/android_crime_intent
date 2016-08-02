@@ -91,11 +91,13 @@ public class FlickrFetchr {
                 String id = parser.getAttributeValue(null, "id");
                 String caption = parser.getAttributeValue(null, "title");
                 String smallUrl = parser.getAttributeValue(null, EXTRA_SMALL_URL);
+                String owner = parser.getAttributeValue(null, "owner");
 
                 GalleryItem item = new GalleryItem();
                 item.Id = id;
                 item.Caption = caption;
                 item.URL = smallUrl;
+                item.Owner = owner;
 
                 items.add(item);
             }
