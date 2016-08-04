@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 /**
  * Created by jerry on 02.08.2016.
@@ -31,11 +33,32 @@ public class PhotoPageFragment extends VisibleFragment {
         View v = inflater.inflate(R.layout.fragment_photo_page, container, false);
         mWebView = (WebView)v.findViewById(R.id.webView);
 
+        final ProgressBar progressBar = (ProgressBar)v.findViewById(R.id.progressBar);
+        progressBar.setMax(100);
+        final TextView titleTextView = (TextView)v.findViewById(R.id.titleTextView);
+
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 return false;
+            }
+        });
+
+        mWebView.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public void onProgressChanged(WebView view, int progress) {
+                if (progress == 100)
+                    progressBar.setVisibility(View.INVISIBLE);
+                else {
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setProgress(progress);
+                }
+            }
+
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                titleTextView.setText(title);
             }
         });
 
