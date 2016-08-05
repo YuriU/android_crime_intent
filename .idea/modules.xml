@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/nerdlauncher/nerdlauncher.iml" filepath="$PROJECT_DIR$/nerdlauncher/nerdlauncher.iml" />
       <module fileurl="file://$PROJECT_DIR$/photogallery/photogallery.iml" filepath="$PROJECT_DIR$/photogallery/photogallery.iml" />
       <module fileurl="file://$PROJECT_DIR$/remotecontrol/remotecontrol.iml" filepath="$PROJECT_DIR$/remotecontrol/remotecontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtracker/runtracker.iml" filepath="$PROJECT_DIR$/runtracker/runtracker.iml" />
     </modules>
   </component>
 </project>

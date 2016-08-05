@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/nerdlauncher" />
             <option value="$PROJECT_DIR$/photogallery" />
             <option value="$PROJECT_DIR$/remotecontrol" />
+            <option value="$PROJECT_DIR$/runtracker" />
           </set>
         </option>
       </GradleProjectSettings>
