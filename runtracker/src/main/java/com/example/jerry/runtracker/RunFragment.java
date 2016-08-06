@@ -23,7 +23,7 @@ public class RunFragment extends Fragment {
 
     private BroadcastReceiver mLocationReceiver = new LocationReceiver(){
         @Override
-        protected void onLocationChanged(Context context, Location loc) {
+        protected void onLocationReceived(Context context, Location loc) {
             mLastLocation = loc;
             if(isVisible())
                 updateUI();
@@ -64,8 +64,7 @@ public class RunFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                mRunManager.startLocationUpdates();
-                mRun = new Run();
+                mRun = mRunManager.startNewRun();
                 updateUI();
             }
         });
@@ -74,7 +73,7 @@ public class RunFragment extends Fragment {
         mStopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mRunManager.stopLocationUpdates();
+                mRunManager.stopRun();
                 updateUI();
             }
         });

@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".LocationReceiver"
+        <receiver android:name=".TrackingLocationReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.example.jerry.runtracker.ACTION_LOCATION"/>
