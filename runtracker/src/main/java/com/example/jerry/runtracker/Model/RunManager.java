@@ -8,6 +8,9 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by jerry on 05.08.2016.
  */
@@ -130,11 +133,25 @@ public class RunManager {
         RunDatabaseHelper.LocationCursor cursor = mHelper.queryLastLocationForRun(runId);
         cursor.moveToFirst();
 
-        if(cursor.isAfterLast()){
+        if(!cursor.isAfterLast()){
             location = cursor.getLocation();
         }
         cursor.close();
         return location;
+    }
+
+    public ArrayList<Location> getLocationsForRun(long runId)
+    {
+        ArrayList<Location> locations = new ArrayList<Location>();
+
+        RunDatabaseHelper.LocationCursor cursor = mHelper.queryLocationsForRun(runId);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()){
+            locations.add(cursor.getLocation());
+        }
+
+        cursor.close();
+        return locations;
     }
 
     public void insertLocation(Location loc){

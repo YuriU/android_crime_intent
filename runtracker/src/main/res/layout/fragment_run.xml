@@ -88,4 +88,14 @@
             android:layout_margin="1dp"
             />
     </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <Button android:id="@+id/test_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Test"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
 </TableLayout>

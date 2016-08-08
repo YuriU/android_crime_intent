@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.example.jerry.runtracker.Model.Run;
 import com.example.jerry.runtracker.Model.RunManager;
 
+import java.util.ArrayList;
+
 /**
  * Created by jerry on 05.08.2016.
  */
@@ -42,7 +44,7 @@ public class RunFragment extends Fragment {
         }
     };
 
-    private Button mStartButton, mStopButton;
+    private Button mStartButton, mStopButton, mTestButton;
     private TextView mStartedTextView, mLatitudeTextView, mLongitudeTextView, mAltitudeTextView, mDurationTextView;
     private Location mLastLocation;
     private RunManager mRunManager;
@@ -103,6 +105,14 @@ public class RunFragment extends Fragment {
             public void onClick(View v) {
                 mRunManager.stopRun();
                 updateUI();
+            }
+        });
+
+        mTestButton = (Button)view.findViewById(R.id.test_button);
+        mTestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayList<Location> locations = mRunManager.getLocationsForRun(mRun.getId());
             }
         });
 
