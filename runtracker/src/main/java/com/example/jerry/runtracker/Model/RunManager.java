@@ -75,6 +75,10 @@ public class RunManager {
         return getLocationPendingIntent(false) != null;
     }
 
+    public boolean isTrackingRun(Run run) {
+        return run != null && run.getId() == mCurrentRunId;
+    }
+
     private void broadcastLocation(Location location) {
         Intent broadcast = new Intent(ACTION_LOCATION);
         broadcast.putExtra(LocationManager.KEY_LOCATION_CHANGED, location);
@@ -93,7 +97,7 @@ public class RunManager {
         mPrefs.edit().remove(PREF_CURRENT_RUN_ID).commit();
     }
 
-    private void startTrackingRun(Run run) {
+    public void startTrackingRun(Run run) {
         mCurrentRunId = run.getId();
         mPrefs.edit().putLong(PREF_CURRENT_RUN_ID, mCurrentRunId).commit();
         startLocationUpdates();
@@ -107,6 +111,30 @@ public class RunManager {
 
     public RunDatabaseHelper.RunCursor queryRuns(){
         return mHelper.queryRuns();
+    }
+
+    public Run getRun(long id)
+    {
+        Run run = null;
+        RunDatabaseHelper.RunCursor cursor = mHelper.queryRun(id);
+        cursor.moveToFirst();
+
+        if(!cursor.isAfterLast())
+            run = cursor.getRun();
+        cursor.close();
+        return run;
+    }
+
+    public Location getLastLocationForRun(long runId){
+        Location location = null;
+        RunDatabaseHelper.LocationCursor cursor = mHelper.queryLastLocationForRun(runId);
+        cursor.moveToFirst();
+
+        if(cursor.isAfterLast()){
+            location = cursor.getLocation();
+        }
+        cursor.close();
+        return location;
     }
 
     public void insertLocation(Location loc){
