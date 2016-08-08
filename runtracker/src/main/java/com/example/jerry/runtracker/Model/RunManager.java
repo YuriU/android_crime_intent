@@ -148,6 +148,7 @@ public class RunManager {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             locations.add(cursor.getLocation());
+            cursor.moveToNext();
         }
 
         cursor.close();
